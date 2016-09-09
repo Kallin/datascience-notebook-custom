@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook
+FROM jupyter/datascience-notebook:749017d878d6
 
 RUN pip3 install xlrd
 RUN pip3 install xlwt
@@ -10,4 +10,4 @@ run pip3 install gmaps
 run pip3 install folium
 run jupyter nbextension enable --py --sys-prefix widgetsnbextension
 run jupyter nbextension enable --py gmaps
-run HDF5_DIR=/opt/conda/pkgs/hdf5-1.8.15.1-2 pip3 install tables
+run HDF5_DIR=/opt/conda/pkgs/hdf5-1.8.17-3 pip3 install tables
